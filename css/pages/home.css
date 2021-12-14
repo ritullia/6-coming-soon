@@ -2,6 +2,7 @@
 @import "../base/reset.css";
 @import "../base/variables.css";
 @import "../base/reset.css";
+@import "../base/layout.css";
 
 /* 3rd-party*/
 
@@ -14,23 +15,4 @@
 @import "../components/progress-bar.css";
 
 /* CUSTOM STYLE BELOW THIS COMMENT, FOR THIS PAGE */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
