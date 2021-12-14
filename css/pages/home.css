@@ -16,9 +16,14 @@
 /* CUSTOM STYLE BELOW THIS COMMENT, FOR THIS PAGE */
 
 /*Hero start*/
+
 .hero {
+    min-height: 100vh;
     padding-bottom: 30px;
     background-image: url(../../images/banner1.png);
+    background-size: cover;
+    background-position: bottom center;
+    background-attachment: fixed;
 }
 
 .hero > .row-short {
@@ -41,12 +46,12 @@
 
 .hero .main-description {
     margin-bottom: 45px;
-    color: #AEB5D2;
+    color: #777c;
     font-size: 18px;
 }
 
 .hero .clock {
-    margin-bottom: 45px;
+    margin-bottom: 30px;
 }
 
 .hero .form {
