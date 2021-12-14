@@ -18,6 +18,7 @@
 /*Hero start*/
 .hero {
     padding-bottom: 30px;
+    background-image: url(../../images/banner1.png);
 }
 
 .hero > .row-short {
