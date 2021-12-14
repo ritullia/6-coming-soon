@@ -17,18 +17,25 @@
 
 
 .container {
+    display: inline-block;
     width: 1000px;
     margin-left: calc(50% - 500px);
     background-color: aquamarine;
 }
 
-.left {
-    
+.container > .left {
+    width: 40%;
+    float: left;
+    margin-right: 5%;
+    background-color: cornflowerblue;
 }
 
-:right {
-
+.container > .right {
+    width: 55%;
+    float: left;
+    background-color: deeppink;
 }
+
 
 /* min-width */
 /* max-width */
@@ -37,51 +44,43 @@
 @media (max-width: 1100px) {
     .container {
         width: 800px;
-        margin-left: calc(50% - 400px);
+        margin-left: 0;
+        padding: calc(50% - 400px);
         background-color: pink;
     }
-    
 }
-
-
 
 @media (max-width: 900px) {
     .container {
         width: 600px;
         margin-left: calc(50% - 300px);
-        background-color: rgb(146, 31, 50);
+        background-color: pink;
     }
-    
+    .container > .left {
+        width: 100%;
+        margin-right: 0;
+   
+    }
+    .container > .right {
+        width: 100%;
+        margin-top: 40px;
+    }
 }
 
 @media (max-width: 700px) {
     .container {
         width: 400px;
         margin-left: calc(50% - 200px);
-        background-color: rgb(146, 31, 50);
+        background-color: pink;
     }
     
 }
+
 @media (max-width: 500px) {
     .container {
         width: 100%;
         margin-left: 0;
         padding: 30px;
-        background-color: rgb(146, 31, 50);
+        background-color: dodgerblue;
     }
-    
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
