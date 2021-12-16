@@ -82,6 +82,9 @@
     color: var(--secondary-color);
     text-decoration: none;
 }
+.content-description > .link:hover {
+    text-decoration: underline;
+}
 
 .content-description {
     font-size: 17px;
