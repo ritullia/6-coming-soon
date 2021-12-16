@@ -1,4 +1,6 @@
 .form {
+    display: inline-block;
+    width: 100Į;
     
 }
 
@@ -12,14 +14,6 @@
 
 .form > label {
     display: none;
-}
-
-.form > input {
-    width: calc(50% - 10px);
-
-}
-.form > input:last-of-type {
-    float: right;
 }
 
 .form > .input {
@@ -38,6 +32,16 @@
     max-height: 300px;
     resize: vertical;
 }
+
+.form > input {
+    width: calc(50% - 10px);
+
+}
+.form > input:last-of-type {
+    float: right;
+}
+
+
 
 .form *:focus {
     outline: 1px solid var(--secondary-color);
