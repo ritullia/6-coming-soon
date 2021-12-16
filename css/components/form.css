@@ -1,7 +1,6 @@
 .form {
     display: inline-block;
-    width: 100Į;
-    
+    width: 100%;
 }
 
 .form > * {
@@ -33,16 +32,6 @@
     resize: vertical;
 }
 
-.form > input {
-    width: calc(50% - 10px);
-
-}
-.form > input:last-of-type {
-    float: right;
-}
-
-
-
 .form *:focus {
     outline: 1px solid var(--secondary-color);
-} 
+}

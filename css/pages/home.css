@@ -1,17 +1,18 @@
 /* base */
-@import "../base/reset.css";
-@import "../base/variables.css";
-@import "../base/reset.css";
-@import "../base/layout.css";
+@import '../base/reset.css';
+@import '../base/variables.css';
+@import '../base/reset.css';
+@import '../base/layout.css';
 
 /* 3rd-party*/
+@import '../components/font-awesome.min.css';
 
 /* components */
-@import "../components/button.css";
-@import "../components/clock.css";
-@import "../components/form.css";
-@import "../components/mouse.css";
-@import "../components/progress-bar.css";
+@import '../components/button.css';
+@import '../components/clock.css';
+@import '../components/form.css';
+@import '../components/mouse.css';
+@import '../components/progress-bar.css';
 
 /* CUSTOM STYLE BELOW THIS COMMENT, FOR THIS PAGE */
 
@@ -55,7 +56,16 @@
 }
 
 .hero .form {
-    margin-bottom: 15px;
+    margin: 0 15px;
+    width: 90%;
+}
+
+.hero .form > .input {
+    color: #fff;
+    border-color: currentColor;
+}
+.hero .form > .input::placeholder {
+    color: currentColor;
 }
 
 /* HERO: end*/
@@ -64,18 +74,15 @@
 
 .column > * {
     margin-bottom: 20px;
-
 }
 .column > *:last-child {
     margin-bottom: 0;
-
 }
+
 .content-title {
     text-transform: uppercase;
     font-size: 20px;
     line-height: 1.2em;
-  
-
 }
 
 .content-description > .link {
@@ -89,16 +96,50 @@
 .content-description {
     font-size: 17px;
     color: #999;
-  
+}
 
+main .form > button {
+    float: right;
+}
+
+@media (min-width: 900px) {
+    main .form > input.input {
+        width: calc(50% - 10px);
+    }
+    main .form > input.input:last-of-type {
+        float: right;
+    }
 }
 .progress-bar {
-   
 }
-
-
 
 /* MAIN CONTENT: end */
 
 /* FOOTER: start */
+
+footer.container {
+    padding-top: 0;
+}
+
+.socials {
+    padding: 15px 0;
+    text-align: center;
+    border-bottom: 2px solid #fff;
+}
+
+.socials > .fa {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    transition: all 1s;
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.socials > .fa:hover {
+    background-color: #fff;
+    color: var(--primary-color);
+}
 /* FOOTERT: end */
