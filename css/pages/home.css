@@ -121,6 +121,7 @@ main .form > button {
 footer.container {
     padding-top: 0;
     text-align: center;
+    color: #fff8;
 }
 
 .socials {
@@ -151,5 +152,20 @@ footer .logo {
     margin: 50px 0;
     object-position: top;
 }
+footer .trio {
+    display: inline-block;
+}
+
+footer .trio > p {
+    float: left;
+    padding: 0 10px;
+}
+footer .trio > span {
+    float: left;
+}
+
+footer .link {
+    color: #fff;
+    text-decoration: none;
 }
 /* FOOTERT: end */
