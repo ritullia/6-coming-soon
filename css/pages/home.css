@@ -122,6 +122,7 @@ footer.container {
     padding-top: 0;
     text-align: center;
     color: #fff8;
+    font-size: 17px;
 }
 
 .socials {
@@ -159,13 +160,44 @@ footer .trio {
 footer .trio > p {
     float: left;
     padding: 0 10px;
+    position: relative;
 }
-footer .trio > span {
-    float: left;
+
+footer .trio > p::before {
+    content: '';
+    display: inline-block;
+    width: 1px;
+    height: 70%;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(-50%, -50%);
+}
+
+footer .trio > p:first-child::before {
+    display: none;
 }
 
 footer .link {
     color: #fff;
     text-decoration: none;
 }
+
+.dollar::before {
+    content: '$';
+}
+.dollar::after {
+    content: '$';
+}
+
+@media (max-width: 700px) {
+    footer .trio > p {
+        width: 100%;
+    }
+    footer .trio > p::before {
+        display: none;
+    }
+}
+
 /* FOOTERT: end */
